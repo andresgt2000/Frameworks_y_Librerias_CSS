@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/06/2018, 09:36:19 PM
+    Author     : agonzalez
+*/
+
+:root {
+    --custom-radius-size:30px;
+    --custom-radius-button-nav-size: 10px;
+    --custom-min-height:100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px dashed yellow;
+    min-height: 25px;    
+}
+
+
+body {
+    background-color: #002752;
+}
+
+i {
+    margin: 0 1px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/*
+ * Date: 20180610
+ * Override bootstrap class rounde-top
+ */
+.rounded-top{
+    -webkit-border-top-left-radius: var(--custom-radius-size) !important; 
+    -webkit-border-top-right-radius: var(--custom-radius-size) !important;
+    -moz-border-top-left-radius: var(--custom-radius-size) !important;
+    -moz-border-top-right-radius: var(--custom-radius-size) !important;
+    -o-border-top-left-radius: var(--custom-radius-size) !important;
+    -o-border-top-right-radius: var(--custom-radius-size) !important;
+    border-top-left-radius: var(--custom-radius-size) !important;
+    border-top-right-radius: var(--custom-radius-size) !important;
+}
+
+.cabecera-min-height {
+    min-height: var(--custom-min-height);
+}
+
+.cabecera.row {
+    background-color: #c2185b;
+    /*padding: 10px;*/
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-image: url(../image/logo.png);
+    background-size: contain;     
+}
+
+.nav-button-expand ul > li {
+    margin: 1px 15px !important;
+    border: 1px solid #0062cc;
+    background-color: #004085;
+    min-width: 100px !important;
+    text-align: center;
+    webkit-border-radius: var(--custom-radius-button-nav-size) !important;    
+    -moz-border-radius:  var(--custom-radius-button-nav-size) !important;    
+    -o-border-radius:  var(--custom-radius-button-nav-size) !important;    
+    border-radius:  var(--custom-radius-button-nav-size) !important;
+}
+
+.nav-button-expand ul > li:hover {
+    border: 1px solid #c2185b;
+    background-color: #3b3b3b;
+}
+
+/*
+ * Date: 20180612
+ * Override bootstrap class nav-bar  navbar-expand-lg
+ */
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+}
