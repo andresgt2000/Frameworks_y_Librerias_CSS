@@ -9,9 +9,15 @@ and open the template in the editor.
 */
 
 :root {
-    --custom-radius-size:30px;
+    --custom-radius-s01:30px;
+    --custom-radius-s02:15px;
     --custom-radius-button-nav-size: 10px;
     --custom-min-height:100px;
+    --custom-color-01:#35516F;
+    --custom-color-02:#327CB3;
+    --custom-color-03:#29AFCB;
+    --custom-color-04:#76E1CE;
+    --custom-color-05:#DBFCDA;
 }
 
 * {
@@ -23,11 +29,15 @@ and open the template in the editor.
 
 
 body {
-    background-color: #002752;
+    background-color: var(--custom-color-01);
 }
 
 i {
     margin: 0 1px;
+}
+
+p {
+    text-align: justify;
 }
 
 .selector-for-some-widget {
@@ -38,15 +48,60 @@ i {
  * Date: 20180610
  * Override bootstrap class rounde-top
  */
-.rounded-top{
-    -webkit-border-top-left-radius: var(--custom-radius-size) !important; 
-    -webkit-border-top-right-radius: var(--custom-radius-size) !important;
-    -moz-border-top-left-radius: var(--custom-radius-size) !important;
-    -moz-border-top-right-radius: var(--custom-radius-size) !important;
-    -o-border-top-left-radius: var(--custom-radius-size) !important;
-    -o-border-top-right-radius: var(--custom-radius-size) !important;
-    border-top-left-radius: var(--custom-radius-size) !important;
-    border-top-right-radius: var(--custom-radius-size) !important;
+.rounded-top {
+    -webkit-border-top-left-radius: var(--custom-radius-s01) !important; 
+    -webkit-border-top-right-radius: var(--custom-radius-s01) !important;
+    -moz-border-top-left-radius: var(--custom-radius-s01) !important;
+    -moz-border-top-right-radius: var(--custom-radius-s01) !important;
+    -o-border-top-left-radius: var(--custom-radius-s01) !important;
+    -o-border-top-right-radius: var(--custom-radius-s01) !important;
+    border-top-left-radius: var(--custom-radius-s01) !important;
+    border-top-right-radius: var(--custom-radius-s01) !important;
+}
+
+.rounded-all {
+    -webkit-border-radius: var(--custom-radius-s02) !important;     
+    -moz-border-radius: var(--custom-radius-s02) !important;
+    -o-border-radius: var(--custom-radius-s02) !important;    
+    border-radius: var(--custom-radius-s02) !important;
+}
+
+/*
+ * Date: 20180617
+ * Override bootstrap class rounde-top
+ */
+.rounded-left {
+    -webkit-border-top-left-radius: var(--custom-radius-s02) !important;
+    -webkit-border-bottom-left-radius: var(--custom-radius-s02) !important;
+    -moz-border-top-left-radius: var(--custom-radius-s02) !important;
+    -moz-border-bottom-left-radius: var(--custom-radius-s02) !important;
+    -o-border-top-left-radius: var(--custom-radius-s02) !important;    
+    border-bottom-left-radius: var(--custom-radius-s02) !important;
+}
+
+/*
+ * Date: 20180617
+ * Override bootstrap class rounde-top
+ */
+.rounded-right {
+    -webkit-border-top-right-radius: var(--custom-radius-s02) !important;
+    -webkit-border-bottom-right-radius: var(--custom-radius-s02) !important;
+    -moz-border-top-right-radius: var(--custom-radius-s02) !important;
+    -moz-border-bottom-right-radius: var(--custom-radius-s02) !important;
+    -o-border-topright-radius: var(--custom-radius-s02) !important;    
+    border-bottom-right-radius: var(--custom-radius-s02) !important;
+}
+
+/*
+ * Date: 20180617
+ * Override bootstrap class rounde-top
+ */
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--custom-color-04);
+    border-radius: .3rem;
 }
 
 .cabecera-min-height {
@@ -54,7 +109,7 @@ i {
 }
 
 .cabecera.row {
-    background-color: #c2185b;
+    background-color: var(--custom-color-02);
     /*padding: 10px;*/
 }
 
@@ -64,16 +119,17 @@ i {
     background-size: contain;     
 }
 
-.nav-button-expand ul > li {
+.nav-expand ul > li {
     margin: 1px 15px !important;
-    border: 1px solid #0062cc;
-    background-color: #004085;
     min-width: 100px !important;
+
+    /*border: 1px solid #0062cc;
+    background-color: #004085;
     text-align: center;
     webkit-border-radius: var(--custom-radius-button-nav-size) !important;    
     -moz-border-radius:  var(--custom-radius-button-nav-size) !important;    
     -o-border-radius:  var(--custom-radius-button-nav-size) !important;    
-    border-radius:  var(--custom-radius-button-nav-size) !important;
+    border-radius:  var(--custom-radius-button-nav-size) !important;*/
 }
 
 .nav-button-expand ul > li:hover {
@@ -89,4 +145,16 @@ i {
     -ms-flex-direction: row;
     flex-direction: row;
     margin: 0 auto;
+}
+
+.contenedor-style {
+    background-color: var(--custom-color-03);
+}
+
+.fondo2 {
+    background-color: var(--custom-color-04);
+}
+
+.fondo1 {
+    background-color: var(--custom-color-05);    
 }
