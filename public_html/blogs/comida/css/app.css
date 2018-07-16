@@ -1,0 +1,22 @@
+body {
+    
+    background-image: url("../image/bon_appetit.jpeg");
+}
+
+div {
+    border: solid 1px yellow;
+    
+}
+
+.fondoClaro {
+    background-color: #FFF;
+    filter: alpha(opacity=95);
+    /* IE */
+  -moz-opacity: 0.95;
+  /* Mozilla */
+  opacity: 0.95;
+    
+}
+
+
+
