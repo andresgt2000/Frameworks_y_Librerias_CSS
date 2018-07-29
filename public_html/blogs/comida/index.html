@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/foundation.css" rel="stylesheet" type="text/css"/>
         <link href="css/app.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
     <body>         
 
@@ -27,6 +28,18 @@ and open the template in the editor.
         <div class="grid-x grid-margin-x" id="content">
  
             <div class="cell medium-4 flex-container flex-dir-column">
+                <div class="callout flex-child-shrink">
+                    <form>
+                        <div class="grid-x grid-padding-x">                          
+                          <div class="small-10 cell">
+                            <input type="text" id="buscar" placeholder="Búscar...">
+                          </div>
+                          <div class="small-1 cell">
+                            <label for="buscar" class="middle"><i class="fas fa-search"></i></label>
+                          </div>  
+                        </div>
+                    </form>
+                </div>
                 <div class="callout flex-child-shrink">
                     <div class="sticky" data-anchor="content">
                         <ul class="vertical menu">
@@ -78,12 +91,31 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
+                <div class="callout flex-child-shrink">
+                    <h3>Historial</h3>
+                    <ul class="vertical menu">
+                       <li><a href="#">Pizza de brócoli sin harina</a></li>
+                       <li><a href="#">Saltimboca de ternera, jamón y salvia</a></li>
+                       <li><a href="#">Callos a la Madrileña.</a></li>
+                       <li><a href="#">BABÀ CON CREMA INGLESA Y LÁMINAS DE NECTARINA</a></li>
+                       <li><a href="#">Tiramisú</a></li>
+                       <li><a href="#">Pavlova</a></li>
+                       <li><a href="#">Macarons</a></li>
+                       <li><a href="#">Torta negra del diablo</a></li>
+                       <li><a href="#">Flan</a></li>
+                       <li><a href="#">Cheesecake</a></li>
+                       <li><a href="#">Brownies con helado</a></li>
+                       <li><a href="#">Gula Melaka</a></li>
+                       <li><a href="#">Isla flotante</a></li>
+                       <li><a href="#">Pastel de Belém</a></li>
+                    </ul>   
+                </div>
             </div>
 
           <div class="medium-8 cell">
             <div class="blog-post">
-              <h3>Receta de Pizza de brócoli sin harina <small>15/07/2018</small></h3>
-              <img class="thumbnail" src="image/favoritos/img_pizza_de_brocoli_sin_harina_69070_600.jpg" alt="Receta de Pizza de brócoli sin harina" width="25%" />
+              <h3>Pizza de brócoli sin harina <small>15/07/2018</small></h3>
+              <img class="thumbnail" src="image/favoritos/img_pizza_de_brocoli_sin_harina_69070_600.jpg" alt="Receta de Pizza de brócoli sin harina" width="50%" />
               <p>Para saber cómo hacer una pizza de brócoli sin harina en la masa 
                  no te pierdas esta receta fácil y rápida porque en tan solo 15 
                  minutos puedes tenerla lista si sigues este paso a paso que te 
@@ -92,16 +124,22 @@ and open the template in the editor.
                  todas aquellas personas que quieran cuidar la línea y comer algo 
                  más saludable y menos calórico que la tradicional. ¡Os va a encantar!.</p>
               <div class="callout">
-                <ul class="menu simple">
-                  <li><a href="#">Autora: Olga Gallego</a></li>
-                  <li><a href="#">Leer más</a></li>
-                </ul>
+                    <form>
+                        <div class="grid-x grid-padding-x">                          
+                          <div class="small-11 cell">
+                            <input type="text" id="buscar" placeholder="Comentarios...">
+                          </div>
+                          <div class="small-1 cell">
+                            <label for="buscar" class="middle"><i class="fas fa-user fa-3x"></i></label>
+                          </div>  
+                        </div>
+                    </form>
               </div>
             </div>
 
             <div class="blog-post">
               <h3>Saltimboca de ternera, jamón y salvia <small>22/6/2018</small></h3>              
-              <img class="thumbnail" src="image/favoritos/saltimbocca-ternera-jamon-salvia.jpg" alt="Saltimboca de ternera, jamón y salvia" width="25%"/>
+              <img class="thumbnail" src="image/favoritos/saltimbocca-ternera-jamon-salvia.jpg" alt="Saltimboca de ternera, jamón y salvia" width="50%"/>
               <p>La saltimboca es comida rápida de alto nivel. Supongo que habrá 
                   versiones laboriosas, pero la que hago yo está lista en unos 15 minutos. 
                   Si no me equivoco, mi receta se basa en la saltimboca típica de Roma, 
@@ -112,16 +150,22 @@ and open the template in the editor.
                   Lo que no se puede cambiar de ninguna manera es la salvia, ese 
                   prodigio hecho hierba que es el alma de la saltimboca.</p>
               <div class="callout">
-                <ul class="menu simple">
-                  <li><a href="#">Autor: Mikel Iturriaga</a></li>
-                  <li><a href="#">Leer más</a></li>
-                </ul>
+                    <form>
+                        <div class="grid-x grid-padding-x">                          
+                          <div class="small-11 cell">
+                            <input type="text" id="buscar" placeholder="Comentarios...">
+                          </div>
+                          <div class="small-1 cell">
+                            <label for="buscar" class="middle"><i class="fas fa-user fa-3x"></i></label>
+                          </div>  
+                        </div>
+                    </form>
               </div>
             </div>
 
             <div class="blog-post">
               <h3>Callos a la Madrileña. <small>05/05/2018</small></h3>
-              <img class="thumbnail" src="image/favoritos/callos-madrilena.jpg" alt="Callos a la Madrileña." width="25%"/>
+              <img class="thumbnail" src="image/favoritos/callos-madrilena.jpg" alt="Callos a la Madrileña." width="50%"/>
               <p>Plato típico de la Comunidad de Madrid donde los haya. Esta 
                  receta se toma preferiblemente en días fríos pero los amantes 
                  de los callos no siguen a rajatabla esta regla.<br />
@@ -135,16 +179,22 @@ and open the template in the editor.
                 Como veis, un plato contundente, que deberás acompañar con su 
                 correspondiente siesta, tan típica de la inmensa castilla española.</p>
               <div class="callout">
-                <ul class="menu simple">
-                  <li><a href="#">Autor: Desconocido</a></li>
-                  <li><a href="#">Leer más</a></li>
-                </ul>
+                    <form>
+                        <div class="grid-x grid-padding-x">                          
+                          <div class="small-11 cell">
+                            <input type="text" id="buscar" placeholder="Comentarios...">
+                          </div>
+                          <div class="small-1 cell">
+                            <label for="buscar" class="middle"><i class="fas fa-user fa-3x"></i></label>
+                          </div>  
+                        </div>
+                    </form>
               </div>
             </div>
 
             <div class="blog-post">
               <h3>BABÀ CON CREMA INGLESA Y LÁMINAS DE NECTARINA <small>21/04/2018</small></h3>
-              <img class="thumbnail" src="image/favoritos/baba.jpg" alt="BABÀ CON CREMA INGLESA Y LÁMINAS DE NECTARINA" width="25%"/>
+              <img class="thumbnail" src="image/favoritos/baba.jpg" alt="BABÀ CON CREMA INGLESA Y LÁMINAS DE NECTARINA" width="50%"/>
               <p>El babà es un dulce  que se elabora en el horno , es muy tradicional 
                  y conocido en la ciudad italiana de Nápoles , mi tierra, y también 
                  en Francia. Tiene una forma de corona cuyo diámetro puede variar 
@@ -153,10 +203,16 @@ and open the template in the editor.
                  bizcocho y está empapada  en  algún tipo de licor, habitualmente 
                  ron o limoncello.</p>
               <div class="callout">
-                <ul class="menu simple">
-                  <li><a href="#">Autor: Desconocido</a></li>
-                  <li><a href="#">Leer más</a></li>
-                </ul>
+                    <form>
+                        <div class="grid-x grid-padding-x">                          
+                          <div class="small-11 cell">
+                            <input type="text" id="buscar" placeholder="Comentarios...">
+                          </div>
+                          <div class="small-1 cell">
+                            <label for="buscar" class="middle"><i class="fas fa-user fa-3x"></i></label>
+                          </div>  
+                        </div>
+                    </form>
               </div>
             </div>
           </div>
