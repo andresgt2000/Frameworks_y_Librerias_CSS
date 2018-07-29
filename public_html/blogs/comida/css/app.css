@@ -4,19 +4,22 @@ body {
 }
 
 div {
-    border: solid 1px yellow;
-    
+    /*border: solid 1px yellow;*/
 }
 
 .fondoClaro {
     background-color: #FFF;
-    filter: alpha(opacity=95);
+    filter: alpha(opacity=97);
     /* IE */
-  -moz-opacity: 0.95;
+  -moz-opacity: 0.97;
   /* Mozilla */
-  opacity: 0.95;
-    
+  opacity: 0.97;
 }
 
 
-
+.backgroundHeader{
+    background-image: url("../image/buena_cuchara.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 10%;
+}
